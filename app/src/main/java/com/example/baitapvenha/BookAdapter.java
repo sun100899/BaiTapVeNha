@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-
 import java.util.ArrayList;
 
 public class BookAdapter extends BaseAdapter {
@@ -40,7 +39,7 @@ public class BookAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
-        ViewHolder viewHolder ;
+        ViewHolder viewHolder = new ViewHolder();
         if(view == null){
             view = inflater.inflate(R.layout.book_item, parent, false);
             viewHolder.tvBookName = view.findViewById(R.id.tv_book_name_item);
